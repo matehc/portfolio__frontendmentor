@@ -20,6 +20,7 @@
     --text-color-1: hsl(0, 0%, 100%);
     --text-color-2: hsl(0, 0%, 85%);
     --secondary-color: hsl(0, 0%, 85%);
+    --footer-bg-color: hsl(0, 0%, 14%);
 
     --fs-18: 1.125rem;
     --fs-20: 1.25rem;
@@ -74,6 +75,7 @@ p {
     font-size: clamp(1rem, 0.9559859154929577rem + 0.18779342723004694vw, 1.125rem);
     line-height: var(--lineHeight-P-mobile);
     font-weight: normal;
+    color: var(--text-color-2);
 }
 /* TODO: MAKE CHANGES TO THE the large heading to reflect design  */
 
@@ -130,6 +132,10 @@ a:hover {
 
 .theme-underline:hover{
     color: var(--accent);
+}
+
+input {
+    width: 100%;
 }
 
 
@@ -533,4 +539,59 @@ PROJECTS SECTION
     .project:hover .project__links {
         display: flex;
     }
+}
+
+
+
+/* 
+=================
+CONTACT SECTION
+=================
+*/
+
+
+.contact__container {
+    background-color: var(--footer-bg-color);
+    position: relative;
+    /* padding-block-start: 60px; */
+    padding-block-end: 87px;
+    
+}
+
+.contact__rings {
+    position: absolute;
+    display: none;
+}
+
+.contact-header-text {
+    text-align: center;
+}
+
+.contact__text {
+    text-align: center;
+    margin-block-start: 20px;
+    margin-block-end: 50px;
+}
+
+.send-btn {
+    width: 144px;
+    display: block;
+    letter-spacing: 2.26px;
+    text-transform: uppercase;
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.contact__label {
+    text-transform: uppercase;
+
+}
+
+.email-input-box {
+    position: relative;
+}
+
+.fas.info__icon {
+    position: absolute;
+    right: 50%;
 }
